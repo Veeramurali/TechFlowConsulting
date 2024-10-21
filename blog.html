@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/blog.css">
+    <title>TechFlow Consulting - Blog</title>
+    <style>
+        /* Add any necessary styles here */
+        .blog-card {
+            transition: max-height 0.2s ease; /* Smooth transition for height change */
+            overflow: hidden; /* Hide overflow content */
+            max-height: 300px; /* Set a new default max-height for the card */
+            padding: 30px; /* Increased padding for inner content */
+            margin-bottom: 20px; /* Space between cards */
+            border: 1px solid #ccc; /* Optional: Add border for card distinction */
+            border-radius: 8px; /* Optional: Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+        }
+
+        .more-content {
+            display: none; /* Initially hide the additional content */
+            margin-top: 10px; /* Space above the additional content */
+        }
+
+        .expanded {
+            max-height: 500px; /* Adjust as necessary for expanded content */
+        }
+
+        .read-more {
+            margin-top: 10px; /* Space above the Read More button */
+            display: inline-block; /* Make button inline-block for margin to apply */
+            background-color: #007bff; /* Button color */
+            color: white; /* Text color */
+            padding: 10px 15px; /* Button padding */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners for button */
+            transition: background-color 0.3s; /* Smooth background color transition */
+        }
+
+        .read-more:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li> <!-- Optional -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Blog</h1>
+        <p>Welcome to the TechFlow Consulting Blog! Here, we explore the latest in technology trends, insights, and innovations. Our team shares valuable knowledge through articles, case studies, and expert opinions. Stay informed and engaged with the tech community!</p>
+        
+        <section class="blog-posts">
+            <article class="blog-card">
+                <h2>Understanding AI Trends in 2024</h2>
+                <p>Artificial Intelligence continues to evolve rapidly. In this post, we explore the latest trends shaping AI technology this year, including advancements in machine learning, natural language processing, and ethical AI considerations.</p>
+                <a href="#" class="read-more">Read More</a>
+                <p class="more-content">Delve deeper into how AI is influencing various sectors, from healthcare to finance. We’ll discuss real-world applications and the implications of AI governance and regulations.</p>
+            </article>
+            <article class="blog-card">
+                <h2>Cloud Computing: The Future is Here</h2>
+                <p>Cloud computing has transformed the way businesses operate. Learn about the latest innovations in cloud technology, including serverless computing, multi-cloud strategies, and the benefits of cloud-native applications for modern enterprises.</p>
+                <a href="#" class="read-more">Read More</a>
+                <p class="more-content">Explore case studies highlighting successful cloud migrations and how they’ve enhanced operational efficiency. Discover essential tools for managing cloud infrastructure effectively.</p>
+            </article>
+            <article class="blog-card">
+                <h2>Cybersecurity: Protecting Your Digital Assets</h2>
+                <p>With increasing digital threats, cybersecurity is more important than ever. Discover effective strategies to safeguard your data, the importance of regular audits, and how to implement a culture of security within your organization.</p>
+                <a href="#" class="read-more">Read More</a>
+                <p class="more-content">Learn about the latest cybersecurity threats and trends, including phishing scams and ransomware. Get insights on building a robust cybersecurity framework for your business.</p>
+            </article>
+            <article class="blog-card">
+                <h2>Case Study: Successful SaaS Implementation</h2>
+                <p>Explore our recent case study on a successful SaaS implementation that improved client productivity and reduced costs. Learn about the challenges faced, the solutions provided, and the measurable outcomes achieved.</p>
+                <a href="#" class="read-more">Read More</a>
+                <p class="more-content">Find out how our client overcame initial resistance to change and how the implementation led to enhanced collaboration and scalability across their organization.</p>
+            </article>
+            <article class="blog-card">
+                <h2>The Rise of IoT: Connecting Everything</h2>
+                <p>The Internet of Things (IoT) is reshaping industries by connecting devices and enabling data-driven decision-making. In this article, we discuss the latest IoT applications, challenges, and the future of connected technology.</p>
+                <a href="#" class="read-more">Read More</a>
+                <p class="more-content">Explore how IoT is being used in smart cities, agriculture, and healthcare. Learn about the challenges of data privacy and security in an interconnected world.</p>
+            </article>
+            <article class="blog-card">
+                <h2>Blockchain Beyond Cryptocurrency</h2>
+                <p>Blockchain technology has far-reaching implications beyond cryptocurrencies. Discover its potential in supply chain management, healthcare, and secure voting systems, along with the benefits and limitations of blockchain implementation.</p>
+                <a href="#" class="read-more">Read More</a>
+                <p class="more-content">Uncover real-world applications of blockchain technology, including how companies are using it to improve transparency and traceability in their operations.</p>
+            </article>
+            <article class="blog-card">
+                <h2>Data Science: Unleashing the Power of Data</h2>
+                <p>Data science is revolutionizing the way organizations analyze and interpret data. Learn about key concepts, tools, and techniques that empower businesses to make data-driven decisions and stay ahead of the competition.</p>
+                <a href="#" class="read-more">Read More</a>
+                <p class="more-content">Discover how data visualization and machine learning can transform raw data into actionable insights. We’ll share success stories and best practices from industry leaders.</p>
+            </article>
+            <article class="blog-card">
+                <h2>5G Technology: A Game Changer for Connectivity</h2>
+                <p>5G technology is set to transform communication and connectivity across the globe. Explore its potential impact on industries, smart cities, and the advancements it brings in speed, reliability, and connectivity.</p>
+                <a href="#" class="read-more">Read More</a>
+                <p class="more-content">Learn about the challenges of implementing 5G technology and how it can revolutionize sectors such as healthcare, transportation, and entertainment.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TechFlow Consulting. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle visibility of additional content for individual cards
+        document.querySelectorAll('.read-more').forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                const moreContent = button.nextElementSibling;
+                const card = button.closest('.blog-card');
+
+                // Toggle the expanded class to change max-height
+                card.classList.toggle('expanded');
+
+                if (card.classList.contains('expanded')) {
+                    moreContent.style.display = "block";
+                    button.textContent = "Read Less";
+                } else {
+                    moreContent.style.display = "none";
+                    button.textContent = "Read More";
+                }
+            });
+        });
+    </script>
+</body>
+</html>

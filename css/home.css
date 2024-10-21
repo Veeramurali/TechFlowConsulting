@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white !important; /* Dark background */
+    color: #AFDDE5; /* Light gray text */
+}
+
+
+.hero {
+    background-image: url('images/background.jpg'); /* Update this path */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Text color on the hero image */
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    margin: 0; /* Remove default margins */
+    padding: 20px; /* Add some padding */
+}
+
+.hero-content h1,
+.hero-content p {
+    font-size: 2em; /* Adjust as needed */
+    margin: 10px 0; /* Space between elements */
+    font-weight: bold; /* Make text bold */
+    color: black; /* Text color */
+    text-shadow: 
+        -1.5px -1.5px 0 white,  
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white; /* White border effect around each letter */
+    display: inline-block; /* Allow borders to wrap tightly around text */
+}
+
+
+
+
+.service-card {
+    background-color: #2A2A2A; /* Darker card background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Slightly darker shadow */
+    margin-bottom: 20px;
+    text-align: center;
+    color: #E0E0E0; /* Light gray text */
+}
+
+.testimonial-card {
+    background-color: #2A2A2A; /* Darker card background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Slightly darker shadow */
+    margin-bottom: 20px;
+    transition: transform 0.5s ease; /* Slower rotation */
+    height: 100%; /* Ensures all cards are the same height */
+    color: #E0E0E0; /* Light gray text */
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #1E1E1E; /* Dark footer */
+    color: #FFFFFF; /* White text */
+    padding: 20px 0;
+}
+
+footer a {
+    color: #007BFF; /* Bright blue links */
+    margin: 0 10px;
+}
+
+input[type="email"] {
+    background-color: #2A2A2A; /* Dark background for input */
+    color: #E0E0E0; /* Light gray text for input */
+    border: 1px solid #444; /* Dark border */
+    padding: 10px; /* Padding for input */
+    border-radius: 5px; /* Rounded corners */
+}
+
+input[type="email"]::placeholder {
+    font-size: 0.9em; /* Adjust the font size as needed */
+    color: #999; /* Placeholder color */
+}

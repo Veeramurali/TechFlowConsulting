@@ -1,0 +1,87 @@
+/* contact.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: GhostWhite; /* Light background for better readability */
+    color: #2A2A2A; /* Dark text color for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2A2A2A; /* Header background color */
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: White; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+h1, h2 {
+    color: #2A2A2A; /* Heading color */
+}
+
+main {
+    padding: 20px; /* Main content padding */
+}
+
+footer {
+    background-color: #2A2A2A; /* Footer background color */
+    color: White; /* Footer text color */
+    padding: 10px 0;
+}
+
+/* Form Styles */
+form {
+    background-color: Lavender; /* Form background color */
+    border: 1px solid LightSlateGray; /* Border around the form */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the form */
+    margin-bottom: 30px; /* Space below the form */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+.btn-primary {
+    background-color: #2A2A2A; /* Button background color */
+    border: none; /* Remove border */
+}
+
+.btn-primary:hover {
+    background-color: grey; /* Button hover color */
+}
+
+/* Google Map Styles */
+iframe {
+    border: 2px solid LightGray; /* Border around the map */
+    border-radius: 8px; /* Rounded corners for the map */
+}
+
+/* Call-to-Action Styles */
+h2:last-of-type {
+    background-color: #2A2A2A; /* Background color for call-to-action */
+    color: White; /* Text color for call-to-action */
+    padding: 15px; /* Padding for call-to-action */
+    border-radius: 8px; /* Rounded corners */
+}

@@ -1,0 +1,131 @@
+/* blog.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Alice Blue */
+    color: #333; /* Dark Gray */
+}
+
+header {
+    background-color: #2A2A2A; /* Steel Blue */
+    color: white;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #2A2A2A; 
+    margin-bottom: 1rem;
+}
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.blog-card {
+    background-color: white;
+    border: 1px solid #ccc; /* Light Gray */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card h2 {
+    color: #2A2A2A; 
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-card p {
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: black; 
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: grey; 
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #2A2A2A; 
+    color: white;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.blog-card {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.blog-card:nth-child(odd) {
+    animation-delay: 0.1s;
+}
+
+.blog-card:nth-child(even) {
+    animation-delay: 0.2s;
+}

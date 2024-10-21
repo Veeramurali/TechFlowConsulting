@@ -1,0 +1,199 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: mintcream;
+    color: darkslategray;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2A2A2A;
+    padding: 15px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: lightyellow;
+}
+
+/* Main content styles */
+main {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Filter buttons */
+.filter-btn {
+    margin: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #2A2A2A; /* Background color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Optional: Add some border radius */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.filter-btn:hover {
+    background-color: darkcyan; /* Change hover color if desired */
+    transform: scale(1.1);
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    width: calc(33.33% - 40px);
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+/* Card styles */
+.card {
+    background-color: white;
+    border: 2px solid lightsteelblue;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: filter 0.3s;
+}
+
+.card-img-top:hover {
+    filter: brightness(0.85);
+}
+
+.card-body {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2A2A2A;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: dimgrey;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #2A2A2A !important;
+    border: white;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: grey ;
+
+}
+
+/* Modal styles */
+.modal-content {
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: lightseagreen;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-body h6 {
+    font-weight: bold;
+    color: darkolivegreen;
+    margin-top: 20px;
+}
+
+.modal-body p {
+    font-size: 16px;
+    color: dimgray;
+    line-height: 1.6;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2A2A2A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-item {
+        width: 100%;
+    }
+
+    .filter-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}

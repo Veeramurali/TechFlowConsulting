@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(255, 255, 255); /* Light background */
+    color: rgb(34, 34, 34); /* Dark text color */
+}
+
+header {
+    background-color: #2A2A2A; /* Light grey for the header */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color:white; /* Dark blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: rgb(34, 34, 34); /* Dark color on hover */
+}
+
+main {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+h1, h2, h3 { /* Updated to include h3 */
+    color: #2A2A2A; /* Changed to the specified color */
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 2em; /* Reduced size for main headings */
+    text-transform: uppercase; /* Makes text all uppercase */
+}
+
+h1 span, h2 span {
+    display: inline-block; /* Allows individual word styling */
+    padding: 10px; /* Space around each word */
+    margin: 0 5px; /* Space between words */
+}
+
+.company-overview p {
+    color: rgb(34, 34, 34); /* Dark text for company overview */
+    font-size: 1em; /* Slightly larger for better readability */
+}
+
+.core-team {
+    margin-top: 50px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center; /* Centering the team cards */
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+}
+
+.team-member {
+    background-color: rgb(240, 240, 240); /* Light background for team member cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    max-width: 250px;
+    text-align: center;
+    color: rgb(34, 34, 34); /* Dark text color */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.team-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid rgb(0, 102, 204); /* Dark blue border */
+}
+
+.team-member h4 {
+    color: #2A2A2A; /* Changed to specified color for team member names */
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: rgb(34, 34, 34); /* Dark text for team member description */
+}
+
+.timeline {
+    margin-top: 50px;
+}
+
+.timeline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-list li {
+    position: relative;
+    padding: 5px 10px;
+    margin-bottom: 0px;
+}
+
+.timeline-list h3 {
+    color: #2A2A2A; /* Changed to specified color for timeline headers */
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1.5em; /* Reduced font size for headers */
+}
+
+.timeline-content p {
+    color: rgb(34, 34, 34); /* Dark text for timeline content */
+    font-size: 1em; /* Font size for paragraph */
+}
+
+footer {
+    background-color: #2A2A2A; /* Light footer */
+    color: white; /* Dark text */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: rgb(0, 102, 204); /* Dark blue for footer links */
+    margin: 0 0px;
+}
+
+footer a:hover {
+    color: rgb(34, 34, 34); /* Dark color on hover */
+}
+
+input[type="email"] {
+    background-color: rgb(240, 240, 240); /* Light background for input */
+    color: rgb(34, 34, 34); /* Dark text for input */
+    border: 1px solid rgb(0, 102, 204); /* Dark blue border */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="email"]::placeholder {
+    font-size: 0.9em; /* Adjust the font size as needed */
+    color: #999; /* Placeholder color */
+}
